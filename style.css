@@ -97,8 +97,6 @@ section h1{
 section p{
     font-size: 20px;
     font-family: var(--font);
-    max-width: 250px;
-    min-height: 250px;
 }
 
 #carouselBackground img {
@@ -128,7 +126,7 @@ section p{
 
 #introducao{
     max-height:400px;
-    max-width: 600;
+    max-width: 600px;
     min-width: 500px;
     padding-left: 10px;
     padding-right: 10px;
