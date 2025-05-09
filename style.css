@@ -1,25 +1,5 @@
 @charset "UTF-8";
 
-@media (max-width: 760px) {
-    .navbar .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .carousel-item img {
-        max-height: 300px; /* Reduz o tamanho das imagens do carrossel */
-    }
-
-    #introducao {
-        width: 85%;
-        font-size: 1rem;
-    }
-
-    .btn a{
-        font-size: 1.5em;
-    }
-}
-
 :root{
     --cor01:#d99a4e;
     --cor02:#594058;
@@ -28,7 +8,7 @@
     --cor05:#f1c40f;
     --cor06:#262626;
     --font:"lora", serif;
-    --font1:"Montserrant", sans-serif;
+    --font1:"Montserrat", sans-serif;
 }
 
 body{
@@ -157,7 +137,7 @@ hr{
 
 .card{
     font-family: var(--font);
-    transition: transform 2 ease-in-out;
+    transition: transform 0.3 ease-in-out;
     margin-bottom: 15px;
 }
 
@@ -260,5 +240,21 @@ hr{
 
     #intro{
         font-family: var(--font);
+        margin-left: -25px;
+        margin-right: -25px;
     }
 
+@media (max-width: 768px) {
+    .d-flex.flex-row {
+        flex-direction: column !important; /* Coloca as imagens em coluna */
+        align-items: center !important; /* Centraliza */
+    }
+
+    .imagem-servico {
+        height: 100% !important;
+        width: 90% !important; /* Ajusta a largura */
+        max-width: 400px !important; /* Define um tamanho máximo */
+        display: block;
+        margin: 10px auto; /* Adiciona espaço entre as imagens */
+    }
+}
