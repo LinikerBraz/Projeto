@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carousel-item img {
+        max-height: 300px; /* Reduz o tamanho das imagens do carrossel */
+    }
+
+    #introducao {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
 :root{
     --cor01:#d99a4e;
     --cor02:#594058;
@@ -9,6 +25,10 @@
     --cor06:#262626;
     --font:"lora", serif;
     --font1:"Montserrant", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .navbar-brand{
@@ -23,13 +43,13 @@
 
 .navbar-toggler {
     position: absolute;
-    right: 15px; /* Ajuste conforme necessário */
-    top: 10px; /* Ajuste a posição vertical */
+    right: 15px; 
+    top: 10px;
     background-color: rgba(128, 128, 128, 0.253) !important;
 }
 
 .navbar-nav .nav-link {
-    color: var(--cor04) !important; /* Branco */
+    color: var(--cor04) !important; 
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -37,20 +57,19 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--cor05) !important; /* Amarelo ao passar o mouse */
+    color: var(--cor05) !important;
     text-decoration: underline;
 }
 
-/* Estiliza o fundo do dropdown */
 .dropdown-menu {
-    background-color: var(--cor03) !important; /* Preto */
+    background-color: var(--cor03) !important; 
     border: none;
     padding: 10px;
 }
 
-/* Estiliza os itens do menu */
+
 .dropdown-item {
-    color: var(--cor04) !important; /* Branco */
+    color: var(--cor04) !important; 
     font-weight: bold !important;
     text-transform: uppercase;
     font-size: 15px;
@@ -58,15 +77,15 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Efeito ao passar o mouse */
+
 .dropdown-item:hover {
-    background-color: var(--cor05) !important; /* Amarelo */
-    color: var(--cor06) !important; /* Cinza escuro */
+    background-color: var(--cor05) !important; 
+    color: var(--cor06) !important; 
 }
 
-/* Ajusta o separador */
+
 .dropdown-divider {
-    border-color: var(--cor04); /* Branco */
+    border-color: var(--cor04); 
 }
 
 section h1{
@@ -76,14 +95,16 @@ section h1{
 }
 
 section p{
-    font-size: 23px;
+    font-size: 20px;
     font-family: var(--font);
+    max-width: 250px;
+    min-width: 250px;
 }
 
 #carouselBackground img {
-    width: 100%; /* Garante que a imagem ocupe 100% do container */
-    height: 400px; /* Define uma altura fixa mais ajustada */
-    object-fit: cover; /* Mantém proporção sem distorcer */
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
 }
 
 #carouselBackground {
@@ -199,7 +220,6 @@ hr{
     font-family: var(--font);
 }
 
-/* Pseudo-element for background animation */
 .btn::before {
     content: "";
     position: absolute;
@@ -207,12 +227,12 @@ hr{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right,  var(--cor01),var(--cor05)); /* Change as needed */
+    background: linear-gradient(to right,  var(--cor01),var(--cor05)); 
     transition: left 0.4s ease-in-out;
     z-index: 1;
 }
 
-  /* Hover effect */
+
 .btn:hover::before {
     left: 0;
 }
@@ -238,45 +258,3 @@ hr{
         font-family: var(--font);
     }
 
-#produtos .card img {
-        height: 250px;
-        object-fit: cover;
-    }
-    
-#produtos h2 {
-        font-weight: bold;
-    }
-    
-#produtos .btn-dark {
-        background: linear-gradient(90deg, #f09433 0%, #e6683c 50%, #dc2743 100%);
-        border: none;
-        color: white;
-        transition: transform 0.3s ease;
-    }
-    
-#produtos .btn-dark:hover {
-        transform: scale(1.05);
-}
-
-
-
-.img-produtos{
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-
-.d-flex {
-    display: flex;
-    justify-content: space-between; /* Coloca os banners nos cantos */
-    align-items: center;
-    width: 100%;
-}
-
-.banner-anuncio-left, .banner-anuncio-right {
-    max-width: 300px; /* Ajuste conforme necessário */
-}
-
-.conteudo {
-    text-align: center; /* Centraliza o texto */
-    flex-grow: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
-}
