@@ -252,7 +252,7 @@ hr{
 
     .imagem-servico {
         height: 100% !important;
-        width: 100% !important; /* Ajusta a largura */
+        width: 80% !important; /* Ajusta a largura */
         max-width: 400px !important; /* Define um tamanho máximo */
         display: block;
         margin: 10px auto; /* Adiciona espaço entre as imagens */
