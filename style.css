@@ -244,7 +244,7 @@ hr{
         margin-right: -25px;
     }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .d-flex.flex-row {
         flex-direction: column !important; /* Coloca as imagens em coluna */
         align-items: center !important; /* Centraliza */
